@@ -130,3 +130,33 @@ body {
   font-size: 1rem;
 
 }
+
+.features__hdl {
+  font-size: 2.25rem;
+  color: var(--black);
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  margin-block: 0;
+}
+
+.person__icon {
+  background-repeat: no-repeat;
+
+  height: 3.25rem;
+  background-image: url(/src/img/Person.svg);
+}
+
+.eye__icon {
+  height: 3.25rem;
+  background-repeat: no-repeat;
+
+  background-image: url(/src/img/Eye.svg);
+}
+
+.catalog__icon {
+  height: 3.25rem;
+  background-repeat: no-repeat;
+
+  background-image: url(/src/img/Catalog.svg);
+}
