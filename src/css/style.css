@@ -10,6 +10,8 @@
   --grey-3: rgba(112, 112, 112, 1);
   --grey-4: rgba(232, 233, 237, 1);
   --grey-5: rgba(247, 247, 247, 1);
+  --red-light: rgba(251, 59, 100, 1);
+  --green-light: rgba(85, 223, 180, 1);
   box-sizing: border-box;
 }
 
@@ -142,6 +144,7 @@ body {
   text-align: center;
   font-family: "Raleway", sans-serif;
   font-weight: 400;
+  margin-bottom: 6rem;
 
 }
 
@@ -168,22 +171,25 @@ body {
 }
 
 .features_number {
-  font-size: 0.8rem;
+  font-size: 1.25rem;
   letter-spacing: .3725rem;
   font-family: "Raleway", sans-serif;
   font-weight: 800;
+
 }
 
 .features__text {
   font-size: .9412rem;
   color: var(--grey-1);
   font-family: "Raleway", sans-serif;
+  margin-bottom: 1rem;
 }
 
 .features__section {
   display: flex;
   justify-content: center;
-  gap: 11.5625rem;
+  gap: 13rem;
+
 
 }
 
@@ -191,8 +197,34 @@ body {
 
   height: 3.9375rem;
   width: 3.9375rem;
-  background-color: #bbb;
   border-radius: 50%;
   display: inline-block;
+  position: absolute;
+  z-index: -42;
 
+}
+
+.class {
+  position: relative;
+}
+
+
+
+.features__section {
+  text-align: center;
+}
+
+.circle__red {
+  background-color: var(--red-light);
+  left: .5rem
+}
+
+.circle__green {
+  background-color: var(--green-light);
+  left: .5rem;
+}
+
+.circle__blue {
+  background-color: var(--primary-color);
+  left: 1.5rem;
 }
