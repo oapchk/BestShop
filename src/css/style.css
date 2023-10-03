@@ -201,6 +201,8 @@ body {
 
 
 
+
+
 .features__section {
   text-align: center;
 
@@ -229,6 +231,9 @@ body {
   justify-content: space-between;
   align-items: flex-end;
   margin-bottom: 2.3125rem;
+  height: 23.125rem;
+  width: 70.25rem;
+  margin-inline: auto;
 }
 
 .info__hdl {
@@ -241,6 +246,7 @@ body {
 .info__lead {
   font-size: 1rem;
   font-family: "Open Sans", sans-serif;
+  margin-bottom: 3.125rem;
 }
 
 
@@ -251,13 +257,27 @@ body {
 
 }
 
-.info.text {
+.info__text {
   padding: 5.625rem 2.25rem;
   max-width: 26rem;
 }
 
 .info__container {
   padding-top: 6.25rem;
-  padding-inline: 15.6875rem;
+  padding-bottom: 6.625rem;
   background-color: var(--grey-5);
+
+}
+
+
+
+.info__box--trumpet .info__img {
+  background-color: var(--green-light);
+  width: 27.5rem;
+  height: 23.125rem;
+}
+
+.info__box--notebook .info__lead {
+  border-bottom: .25rem solid var(--red-light);
+
 }
