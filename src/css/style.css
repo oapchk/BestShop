@@ -129,12 +129,16 @@ body {
 
 }
 
-.features__hdl {
+.hdl2 {
   font-size: 2.25rem;
   color: var(--black);
   text-align: center;
   font-family: "Raleway", sans-serif;
   font-weight: 400;
+}
+
+.features__hdl {
+
   margin-bottom: 6rem;
 
 }
@@ -237,8 +241,7 @@ body {
 }
 
 .info__hdl {
-  font-size: 2.25rem;
-  font-family: "Raleway", sans-serif;
+
   margin-bottom: 1.875rem;
 
 }
@@ -280,4 +283,44 @@ body {
 .info__box--notebook .info__lead {
   border-bottom: .25rem solid var(--red-light);
 
+}
+
+.pricing {
+  margin-top: 6.25rem;
+  margin-inline: auto;
+}
+
+.pricing__versions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3.6875rem;
+}
+
+.pricing__version {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 23.25rem;
+  height: 28.8125rem;
+
+}
+
+.version__hdl {
+  font-size: 1.3125rem;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+}
+
+.version__price {
+  font-size: 2.875rem;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+}
+
+.pricing__item {
+  font-size: .875rem;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
 }
