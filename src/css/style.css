@@ -10,6 +10,9 @@
   --grey-3: rgba(112, 112, 112, 1);
   --grey-4: rgba(232, 233, 237, 1);
   --grey-5: rgba(247, 247, 247, 1);
+  --red-light: rgba(251, 59, 100, 1);
+  --green-light: rgba(85, 223, 180, 1);
+  box-sizing: border-box;
 }
 
 html,
@@ -17,9 +20,6 @@ body {
   font-size: 16px;
 
 }
-
-
-
 
 .header {
   background-color: var(--secondary-color);
@@ -80,24 +80,16 @@ body {
   width: 5.24375rem;
 }
 
-.hero {
-  /*background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  max-height: 100vh;*/
-
-
-}
-
 .hero__bg {
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
-  max-width: 90rem
+  width: 100%;
+  height: auto;
 }
 
 .hero .hero__inner {
-
+  margin-top: 6.25rem;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -111,7 +103,6 @@ body {
   font-family: "Raleway", sans-serif;
   font-weight: 400;
   font-size: 3.0625rem;
-
 
 }
 
@@ -138,12 +129,17 @@ body {
 
 }
 
-.features__hdl {
+.hdl2 {
   font-size: 2.25rem;
   color: var(--black);
   text-align: center;
   font-family: "Raleway", sans-serif;
   font-weight: 400;
+}
+
+.features__hdl {
+
+  margin-bottom: 6rem;
 
 }
 
@@ -152,18 +148,179 @@ body {
 
   height: 3.25rem;
   background-image: url(/src/img/Person.svg);
+  background-position: center;
 }
 
 .eye__icon {
   height: 3.25rem;
   background-repeat: no-repeat;
-
+  background-position: center;
   background-image: url(/src/img/Eye.svg);
 }
 
 .catalog__icon {
   height: 3.25rem;
   background-repeat: no-repeat;
-
+  background-position: center;
   background-image: url(/src/img/Catalog.svg);
+}
+
+.features_number {
+  font-size: 1.25rem;
+  letter-spacing: .3725rem;
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+
+}
+
+.features__text {
+  font-size: .9412rem;
+  color: var(--grey-1);
+  font-family: "Raleway", sans-serif;
+  margin-bottom: 1rem;
+}
+
+.features__section {
+  display: flex;
+  justify-content: center;
+  gap: 13rem;
+  margin-bottom: 6.5625rem;
+
+}
+
+.features__circle {
+
+  height: 3.9375rem;
+  width: 3.9375rem;
+  border-radius: 50%;
+  display: inline-block;
+  position: absolute;
+  z-index: -42;
+
+}
+
+.class {
+  position: relative;
+}
+
+
+
+
+
+.features__section {
+  text-align: center;
+
+}
+
+.circle__red {
+  background-color: var(--red-light);
+  left: .5rem
+}
+
+.circle__green {
+  background-color: var(--green-light);
+  left: .5rem;
+}
+
+.circle__blue {
+  background-color: var(--primary-color);
+  left: 1.5rem;
+}
+
+.info__onebox {
+  background-color: var(--secondary-color);
+  border: 1px solid var(--grey-4);
+  border-radius: .3125rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 2.3125rem;
+  height: 23.125rem;
+  width: 70.25rem;
+  margin-inline: auto;
+}
+
+.info__hdl {
+
+  margin-bottom: 1.875rem;
+
+}
+
+.info__lead {
+  font-size: 1rem;
+  font-family: "Open Sans", sans-serif;
+  margin-bottom: 3.125rem;
+}
+
+
+
+.info {
+  margin-inline: auto;
+  width: 100%;
+
+}
+
+.info__text {
+  padding: 5.625rem 2.25rem;
+  max-width: 26rem;
+}
+
+.info__container {
+  padding-top: 6.25rem;
+  padding-bottom: 6.625rem;
+  background-color: var(--grey-5);
+
+}
+
+
+
+.info__box--trumpet .info__img {
+  background-color: var(--green-light);
+  width: 27.5rem;
+  height: 23.125rem;
+}
+
+.info__box--notebook .info__lead {
+  border-bottom: .25rem solid var(--red-light);
+
+}
+
+.pricing {
+  margin-top: 6.25rem;
+  margin-inline: auto;
+}
+
+.pricing__versions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3.6875rem;
+}
+
+.pricing__version {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 23.25rem;
+  height: 28.8125rem;
+
+}
+
+.version__hdl {
+  font-size: 1.3125rem;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+}
+
+.version__price {
+  font-size: 2.875rem;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+}
+
+.pricing__item {
+  font-size: .875rem;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
 }
